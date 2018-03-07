@@ -8,6 +8,6 @@
         "jsx": "preserve"
     },
     "files": [
-        "src/main.ts"
+        "index.ts"
     ]
 }
