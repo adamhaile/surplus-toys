@@ -1,23 +1,30 @@
 {
-  "name": "surplus.js",
-  "version": "0.0.0",
-  "description": "S.js + htmliterals + ... = Surplus",
-  "main": "dist/surplus.js",
+  "name": "surplus-toys",
+  "version": "0.5.0",
+  "description": "Write super-simple Surplus.js apps with in-browser compilation",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && rollup -c --environment production"
   },
   "keywords": [
+    "surplus",
+    "s-js",
     "javascript",
-    "mvc",
+    "jsx",
     "framework",
     "reactive"
   ],
   "author": "Adam Haile",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-concat": "^2.4.3",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.1.0"
+    "rollup": "^0.54.1",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-uglify": "^3.0.0",
+    "s-array": "^0.4.9",
+    "s-js": "^0.4.7",
+    "surplus": "^0.5.0",
+    "surplus-mixin-data": "^0.5.0",
+    "surplus-mixin-onkey": "^0.4.1"
   }
 }
