@@ -16,16 +16,16 @@ Surplus-toys will compile your `"text/jsx"` code into regular javascript and exe
 ```html
 <h1>Hello World with Surplus-toys</h1>
 <script type="text/jsx">
-var name = S.data("World");
+var you = S.data("World");
 document.body.appendChild(
     <div>
-        Your name: <input type="text" value={name()} onChange={e => name(e.target.value)} />
+        Your name: <input type="text" value={you()} onInput={e => you(e.target.value)} />
         <br/>
-        Hello {name()}!
+        Hello {you()}!
     </div>
 )
 </script>
-<script src="http://unpkg.com/surplus-toys" />
+<script src="http://unpkg.com/surplus-toys"></script>
 ```
 For more examples, see [surplus-demos](https://github.com/adamhaile/surplus-demos).
 
