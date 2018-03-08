@@ -16,7 +16,7 @@ function compileSurplus() {
         source : string,
         compiled : string;
 
-    while (scriptIn = document.querySelector("script[type='text/jsx']")) {
+    while (scriptIn = document.querySelector("script[type='text/ecmascript']")) {
         scriptIn.type += '-processed';
 
         source = scriptIn.textContent || scriptIn.innerText || scriptIn.innerHTML;
